@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+<html>
+  <h1 id="title">Golf Survey</h1>
+  <p id="description">This survey finds out how good you are at golf!</p>
+  <form id="survey-form">
+    <label id="name-label">Name</label>
+    <input id="name" type="text" placeholder="ex. 'John Doe'" required></input>
+    <br>
+    <label id="email-label">Email</label>
+    <input id="email" type="email" placeholder="ex. 'jdoe@example.com'" required></input>
+    <br>
+    <label id="number-label">Avg. Number of strokes over 18</label>
+    <input id="number" type="number" min="50" max="160" placeholder="ex. '95'"></input>
+    <br>
+    <label>How many years have you played?</label>
+    <select id="dropdown">
+      <option value="less than one.">less than one.</option>
+      <option value="one">one</option>
+      <option value="two">two</option>
+      <option value="three">three</option>
+      <option value="four">four</option>
+      <option value="five">five</option>
+      <option value="six or more.">six or more.</option>
+    </select>
+    <br>
+
+    <label>Favorite season to play in</label>
+    <fieldset id="seasons" class="seasons">
+      <label for="fall">Fall</label>
+      <input type="radio" value="Fall" name="seasons" id="fall"><br>
+
+      <label for="winter">Winter</label>
+      <input type="radio" value="Winter" name="seasons" id="winter"><br>
+
+      <label for="spring">Spring</label>
+      <input type="radio" value="Spring" name="seasons" id="spring"><br>
+
+      <label for="summer">Summer</label>
+      <input type="radio" value="Summer" name="seasons" id="summer" checked>
+    </fieldset>
+    <label>What areas of your game do you feel need the most work?</label>
+
+    <fieldset>
+      <label>Putting</label>
+      <input type="checkbox" value="Putting"></input>
+      <br>
+
+      <label>Chipping</label>
+      <input type="checkbox" value="Chipping"></input>
+      <br>
+
+      <label>Driving</label>
+      <input type="checkbox" value="Driving"></input>
+      <br>
+
+      <label>Approuching</label>
+      <input type="checkbox" value="Approuching"></input>
+      <br>
+
+      <label>I dont even know man</label>
+      <input type="checkbox" value="Idk"></input>
+    </fieldset>
+
+    <div class="comments">
+    <p>Additional Comments</p>
+    <textarea></textarea>
+  </div>
+  <br>
+  <button id="submit">Submit</button>
+  </form>
+  
+
+</html>

@@ -1,0 +1,27 @@
+.comments {
+text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+button {
+position: absolute;
+left: 50%;
+top: 93%;
+transform: translate(-50%, -50%);
+
+}
+
+br {
+display: block; /* makes it have a width */
+content: ""; /* clears default height */
+margin-top: 10; /* change this to whatever height you want it */
+}
+
+fieldset {
+margin: 25;
+text-align: center;
+}
+  
+  
