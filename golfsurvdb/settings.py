@@ -55,7 +55,7 @@ MIDDLEWARE = [
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
-ROOT_URLCONF = 'storefront.urls'
+ROOT_URLCONF = 'golfsurvdb.urls'
 
 TEMPLATES = [
     {
@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'storefront.wsgi.application'
+WSGI_APPLICATION = 'golfsurvdb.wsgi.application'
 
 
 # Database
