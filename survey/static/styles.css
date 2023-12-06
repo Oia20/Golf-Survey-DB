@@ -1,12 +1,16 @@
+
 .comments {
 text-align: center;
 }
 
 h1{
     text-align: center;
+    font-size: 40px;
+    margin-bottom: 0;
 }
+
 button {
-position: absolute;
+position:sticky;
 left: 50%;
 top: 93%;
 transform: translate(-50%, -50%);
@@ -14,14 +18,100 @@ transform: translate(-50%, -50%);
 }
 
 br {
-display: block; /* makes it have a width */
-content: ""; /* clears default height */
-margin-top: 10; /* change this to whatever height you want it */
+display: block;
+content: "";
+margin-top: 10;
 }
 
 fieldset {
 margin: 25;
 text-align: center;
 }
-  
-  
+
+input[type=radio] {
+display: none;
+}
+input[type=text]{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+img:hover {
+opacity: 0.7;
+cursor: pointer;
+}
+
+img:active {
+opacity:0.4;
+cursor: pointer;
+}
+
+input[type=radio]:checked + img{
+border: 5px solid rgba(27, 228, 0, 0.527);
+}
+
+.gallery {
+    display:flex;
+    grid-auto-rows:auto, auto, auto;
+    max-width: 90%;
+    height: auto;
+    grid-template-columns: 1fr;
+    padding-bottom: 50px;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+.name {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align:left;
+    font-size: 20px;
+}
+
+.box {
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+    text-align: center;
+}
+
+.whole {
+    background-image: url("https://t3.ftcdn.net/jpg/02/80/90/42/360_F_280904226_je9pk9yKrF5ocMtEcy54qWHlMJqzP2pz.jpg");
+    box-sizing: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%; 
+}
+
+form {
+    background: rgba(5, 92, 34, 0.7);
+    width: 100%;
+    height: 100vh;
+
+}
+
+html {
+    font-family: monospace;
+}
+
+.seasonss {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.areas {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.cb {
+    font-size: 20px;
+
+}

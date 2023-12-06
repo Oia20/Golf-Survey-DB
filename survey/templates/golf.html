@@ -2,74 +2,92 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'styles.css' %}">
 <html>
+  <body class="whole">
   <h1 id="title">Golf Survey</h1>
-  <p id="description">This survey finds out how good you are at golf!</p>
-  <form id="survey-form">
-    <label id="name-label">Name</label>
-    <input id="name" type="text" placeholder="ex. 'John Doe'" required></input>
+  <div class="box">
+  <form id="survey-form" method="POST"> {% csrf_token %}
+    <div class="name">
+    <label id="name-label">First name</label>
     <br>
-    <label id="email-label">Email</label>
-    <input id="email" type="email" placeholder="ex. 'jdoe@example.com'" required></input>
+    <input id="name" type="text" placeholder="ex. 'John'" required name="fname"></input>
+    </div>
     <br>
-    <label id="number-label">Avg. Number of strokes over 18</label>
-    <input id="number" type="number" min="50" max="160" placeholder="ex. '95'"></input>
+    <div class="name">
+    <label id="number-label">Avg. Number of strokes over 18 holes</label>
     <br>
+    <input id="number" type="number" min="50" max="160" placeholder="ex. '95'" name="strokes"></input>
+    </div>
+    <br>
+    <div class="name">
     <label>How many years have you played?</label>
-    <select id="dropdown">
-      <option value="less than one.">less than one.</option>
-      <option value="one">one</option>
-      <option value="two">two</option>
-      <option value="three">three</option>
-      <option value="four">four</option>
-      <option value="five">five</option>
-      <option value="six or more.">six or more.</option>
-    </select>
     <br>
+    <select id="dropdown" name="years">
+      <option value="less than one." name ="years">less than one.</option>
+      <option value="one" name ="years">one</option>
+      <option value="two" name ="years">two</option>
+      <option value="three" name ="years">three</option>
+      <option value="four" name ="years">four</option>
+      <option value="five" name ="years">five</option>
+      <option value="six or more." name ="years">six or more.</option>
+    </select>
+    </div>
+    <br>
+    <label class="seasonss">Favorite season to play in</label>
+    <div class="gallery">
 
-    <label>Favorite season to play in</label>
-    <fieldset id="seasons" class="seasons">
-      <label for="fall">Fall</label>
-      <input type="radio" value="Fall" name="seasons" id="fall"><br>
+        <label for="fall">
+        <input type="radio" value="Fall" name="seasons" id="fall" class="radio-item">
+        <img src="https://media.istockphoto.com/id/178142652/photo/autumn-mountain-golf-course.jpg?s=612x612&w=0&k=20&c=KSMORdioAPA7H-gCdRu3aHKYHcNweqcUuy2a1SD5PPM=" alt="Option 1">
+        <p>fall</p>
+        </label>
 
-      <label for="winter">Winter</label>
-      <input type="radio" value="Winter" name="seasons" id="winter"><br>
+        <label for="winter">
+        <input type="radio" value="Winter" name="seasons" id="winter" class="radio-item">
+        <img src="https://st.depositphotos.com/1025644/3327/i/450/depositphotos_33275955-stock-photo-golf-ball-in-the-snow.jpg" alt="Option 1">
+        <p>winter</p>
+        </label>
 
-      <label for="spring">Spring</label>
-      <input type="radio" value="Spring" name="seasons" id="spring"><br>
+        <label for="summer">
+        <input type="radio" value="Summer" name="seasons" id="summer" class="radio-item">
+        <img src="https://media.istockphoto.com/id/1348081839/photo/golf-course-putting-green-with-flag-at-sunset.jpg?s=612x612&w=0&k=20&c=TacKN3saxiS2_u821Vlq7UCGXmSI4sU46rJr7ZXz-Kk=" alt="Option 1">
+        <p>summer</p>
+        </label>
 
-      <label for="summer">Summer</label>
-      <input type="radio" value="Summer" name="seasons" id="summer" checked>
-    </fieldset>
-    <label>What areas of your game do you feel need the most work?</label>
+        <label for="spring">
+        <input type="radio" value="Spring" name="seasons" id="spring" class="radio-item">
+        <img src="https://media.istockphoto.com/id/113123431/photo/golf-course-in-spring.jpg?s=612x612&w=0&k=20&c=vZMp9oBjcihgreUuDb1I3tuHp4mn6XP1gZVIZFp7CSk=" alt="Option 1">
+        <p>spring</p>
+        </label>
+
+        
+      </div>
+    <label class="areas">What areas of your game do you feel need the most work?</label>
 
     <fieldset>
-      <label>Putting</label>
-      <input type="checkbox" value="Putting"></input>
+      <label  class="cb">Putting</label>
+      <input type="checkbox" value="True" name="areas"></input>
       <br>
 
-      <label>Chipping</label>
-      <input type="checkbox" value="Chipping"></input>
+      <label  class="cb">Chipping</label>
+      <input type="checkbox" value="True" name="areas"></input>
       <br>
 
-      <label>Driving</label>
-      <input type="checkbox" value="Driving"></input>
+      <label  class="cb">Driving</label>
+      <input type="checkbox" value="True" name="areas"></input>
       <br>
 
-      <label>Approuching</label>
-      <input type="checkbox" value="Approuching"></input>
+      <label  class="cb">Approuching</label>
+      <input type="checkbox" value="True" name="areas"></input>
       <br>
 
-      <label>I dont even know man</label>
-      <input type="checkbox" value="Idk"></input>
+      <label  class="cb">I dont even know man</label>
+      <input type="checkbox" value="Idk" name="areas"></input>
     </fieldset>
 
-    <div class="comments">
-    <p>Additional Comments</p>
-    <textarea></textarea>
-  </div>
   <br>
-  <button id="submit">Submit</button>
+  <button id="submit">Submit and see our data collection!</button>
   </form>
-  
+</div>
+</body>
 
 </html>
