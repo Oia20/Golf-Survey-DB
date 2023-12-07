@@ -12,4 +12,5 @@ def golfsurv(request):
 
         new_surv = surverySubmit(fname=fname, strokes=strokes, years=years, season=seasons, areas=areas)
         new_surv.save()
+        return render(request,'golf-data.html')
     return render(request, "golf.html")
