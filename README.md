@@ -1,4 +1,4 @@
-This simple project uses Django, CSS, HTML, and MySQL to store and display data submitted by the user.
+This simple project uses Django, CSS, HTML, and MySQL to store and display data submitted by the users.
 
 It was great Django practice.
 
