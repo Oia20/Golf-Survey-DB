@@ -6,5 +6,91 @@
         <title>Golfer Data</title>
         <meta charset="utf-8">
     </head>
-    <header><h1>Our Golfer Data!</h1></header>
+
+    <header> <img src="https://cdn-icons-png.flaticon.com/512/140/140399.png"><h1>Our Golfer Data!</h1></header>
+    
+    <body>
+        <div class="strokes">
+            <p class="strokes-p">Total Number of Submissions  </p>
+            <p class="num">{{ subs }}</p>
+        </div>
+
+        <div class="strokes">
+            <p class="strokes-p">average number of strokes over 18 from all of our submissions  </p>
+            <p class="num">{{ strokes }}</p>
+        </div>
+
+        <div class="season-container">
+            <h1 class="season-title">Number of each season selected</h1>
+
+            <div class="season-item">
+                <p class="season-item">Summer: {{ summers }}</p>
+            </div>
+            <div class="season-item">
+                <p class="season-item">Spring: {{ springs }}</p>
+            </div>
+            <div class="season-item">
+                <p class="season-item">Fall: {{ falls }}</p>
+            </div>
+            <div class="season-item">
+                <p class="season-item">Winter: {{ winters }}</p>
+            </div>
+        </div>
+
+        <div class="season-container">
+            <h1 class="season-title">How many years our submissions have played</h1>
+
+            <div class="season-item">
+                <p class="season-item">Less than one year: {{ lessThan1Yr }}</p>
+            </div>
+
+            <div class="season-item">
+                <p class="season-item">One year: {{ oneYr }}</p>
+            </div>
+
+            <div class="season-item">
+                <p class="season-item">Two years: {{ twoYr }}</p>
+            </div>
+
+            <div class="season-item">
+                <p class="season-item">Three years: {{ threeYr }}</p>
+            </div>
+
+            <div class="season-item">
+                <p class="season-item">Four years: {{ fourYr }}</p>
+            </div>
+
+            <div class="season-item">
+                <p class="season-item">Five years: {{ fiveYr }}</p>
+            </div>
+            
+            <div class="season-item">
+                <p class="season-item">Six or more years: {{ moreThan6Yr }}</p>
+            </div>
+        </div>
+
+        <div class="season-container">
+            <h1 class="season-title">What areas do our submissions think they need to work on the most?</h1>
+
+            <div class="season-item">
+                <p class="season-item">Putting: {{ putting }}</p>
+            </div>
+            <div class="season-item">
+                <p class="season-item">approaching: {{ approuching }}</p>
+            </div>
+            <div class="season-item">
+                <p class="season-item">Driving: {{ driving }}</p>
+            </div>
+            <div class="season-item">
+                <p class="season-item">Chipping: {{ chipping }}</p>
+            </div>
+            <div class="season-item">
+                <p class="season-item">I don't know: {{ idk }}</p>
+            </div>
+        </div>
+
+
+        
+
+    </body>
 </html>

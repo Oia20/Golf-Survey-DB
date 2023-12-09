@@ -1,4 +1,63 @@
-h1 {
+header {
     text-align: center;
-    color: burlywood
+    padding: 15px;
+    background-color: #6b5448;
+    margin: -20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    border-bottom: 4px solid #051406;
+}
+
+html {
+    background-color: #bab499;
+    font-family: monospace;
+    color: #051406
+}
+
+.strokes {
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+    border-style: groove;
+    border-width: 5px;
+    border-color: #5c7a15;
+    padding-top: 1px;
+    margin: 5px
+}
+
+img {
+    width: 40px;
+    height: auto;
+}
+
+p.num {
+    font-size: 50px;
+    padding:0;
+    margin: 0;
+    
+}
+
+.strokes-p {
+    margin: 0px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.season-container {
+    text-align: center;
+    font-size: 30px;
+    border-style: groove;
+    border-width: 5px;
+    border-color: #5c7a15;
+    margin: 5px
+}
+
+.season-item {
+    margin: 5px
+}
+
+.season-title {
+    font-size: 35px;
 }

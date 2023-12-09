@@ -29,5 +29,5 @@ class surverySubmit(models.Model):
     fname = models.CharField(max_length=30, null=False, blank=False)
     strokes= models.IntegerField(null=False, blank=False)
     years = models.CharField(max_length=30, choices=COLOR_CHOICES, default='one')
-    season = models.CharField(max_length=30, choices=seasons, default='summer')
+    seasons = models.CharField(max_length=30, choices=seasons, default='summer')
     areas = models.CharField(max_length=30, choices=area, default='putting')
