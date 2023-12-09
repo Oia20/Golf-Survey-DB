@@ -11,6 +11,4 @@ Page which displays the data collected in an understandable way:
 ![Screenshot (51)](https://github.com/Oia20/Golf-Survey-DB/assets/92279567/41b0f88d-a819-410f-b2b7-7859fd49ebdf)
 
 
-
-https://github.com/Oia20/Golf-Survey-DB/assets/92279567/470c4e92-c695-4c24-abb2-bd46e76005d4
-
+![ezgif com-crop](https://github.com/Oia20/Golf-Survey-DB/assets/92279567/c46591ae-51f5-4b67-9f7e-dc246d69a201)
